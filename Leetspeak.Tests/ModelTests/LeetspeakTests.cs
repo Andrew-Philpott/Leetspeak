@@ -12,8 +12,8 @@ namespace Leetspeak.Tests
         public void Translate_StringContainsUnaffectedLetters_String()
         {
             LeetspeakTranslator translator = new LeetspeakTranslator();
-            string s = "a";
-            Assert.AreEqual("a", translator.Translate(s));
+            string s = "aEOITs";
+            Assert.AreEqual("a3017z", translator.Translate(s));
         }
 
         [TestMethod]
@@ -54,6 +54,16 @@ namespace Leetspeak.Tests
             LeetspeakTranslator translator = new LeetspeakTranslator();
             string s = "s";
             Assert.AreEqual("z", translator.Translate(s));
+        }
+
+        [TestMethod]
+        public void Translate_StringWithMultipleWordsToLeetSpeak_String()
+        {
+            LeetspeakTranslator translator = new LeetspeakTranslator();
+            string s = "Don't you love these 'String' exercises? I do!";
+            Assert.AreEqual("D0n'7 y0u l0v3 7h3z3 'S7ring' 3x3rciz3z? 1 d0!", translator.Translate(s));
+            // string s = "'Strings strings";
+            // Assert.AreEqual("'S7r1ngz s7r1ngz", translator.Translate(s));
         }
     }
 }

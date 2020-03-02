@@ -40,7 +40,7 @@ This application allows you translate a sentence to L33tSp3ak.
   - Input: Sea
   - Output: Z3a
 
-- _Spec: The application replaces the capital character s with the Character z unless it is the first character in the string._
+- _Spec: The application replaces the capital character s with the Character z unless it is the first character in the word._
 
   - Input: strings
   - Output: stringz

@@ -13,54 +13,38 @@ namespace Leetspeak
             char[] characters = sentence.ToCharArray();
             for (int i = 0; i < characters.Length; i++)
             {
-                if (Char.IsUpper(characters[i]))
+                if (i >= 1)
                 {
-                    if (characters[i] == 'I')
-                    {
-                        characters[i] = '1';
-                    }
                     if (characters[i] == 'S')
                     {
-                        characters[i] = 'Z';
-                    }
-                    else
-                    {
-                        char l = Char.ToLower(characters[i]);
-                        if (l == 'e')
+                        if (characters[i - 1] == ' ' || characters[i - 1] == '\'')
                         {
-                            characters[i] = '3';
-                        }
-                        else if (l == 'o')
-                        {
-                            characters[i] = '0';
-                        }
-                        else if (l == 't')
-                        {
-                            characters[i] = '7';
-                        }
-                        else if (l == 's')
-                        {
-                            characters[i] = 'z';
+                            characters[i] = 'S';
                         }
                     }
                 }
+                if (characters[i] == 'I')
+                {
+                    characters[i] = '1';
+                }
                 else
                 {
-                    if (characters[i] == 'e')
+                    char l = Char.ToLower(characters[i]);
+                    if (characters[i] == 's')
+                    {
+                        characters[i] = 'z';
+                    }
+                    if (l == 'e')
                     {
                         characters[i] = '3';
                     }
-                    else if (characters[i] == 'o')
+                    if (l == 'o')
                     {
                         characters[i] = '0';
                     }
-                    else if (characters[i] == 't')
+                    if (l == 't')
                     {
                         characters[i] = '7';
-                    }
-                    else if (characters[i] == 's')
-                    {
-                        characters[i] = 'z';
                     }
                 }
             }
