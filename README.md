@@ -30,6 +30,21 @@ This application allows you translate a sentence to L33tSp3ak.
   - Input: I
   - Output: 1
 
+- _Spec: The application replaces the capital character s with the Character z._
+
+  - Input: s
+  - Output: z
+
+- _Spec: The application should apply all previous specs to every character of a string._
+
+  - Input: Sea
+  - Output: Z3a
+
+- _Spec: The application replaces the capital character s with the Character z unless it is the first character in the string._
+
+  - Input: strings
+  - Output: stringz
+
 ## Setup/Installation Requirements
 
 - Clone this repository.

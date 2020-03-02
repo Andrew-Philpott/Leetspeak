@@ -19,6 +19,10 @@ namespace Leetspeak
                     {
                         characters[i] = '1';
                     }
+                    if (characters[i] == 'S')
+                    {
+                        characters[i] = 'Z';
+                    }
                     else
                     {
                         char l = Char.ToLower(characters[i]);
@@ -33,6 +37,10 @@ namespace Leetspeak
                         else if (l == 't')
                         {
                             characters[i] = '7';
+                        }
+                        else if (l == 's')
+                        {
+                            characters[i] = 'z';
                         }
                     }
                 }
@@ -49,6 +57,10 @@ namespace Leetspeak
                     else if (characters[i] == 't')
                     {
                         characters[i] = '7';
+                    }
+                    else if (characters[i] == 's')
+                    {
+                        characters[i] = 'z';
                     }
                 }
             }

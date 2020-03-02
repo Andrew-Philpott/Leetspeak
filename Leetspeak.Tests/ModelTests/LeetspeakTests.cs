@@ -47,5 +47,13 @@ namespace Leetspeak.Tests
             string s = "T";
             Assert.AreEqual("7", translator.Translate(s));
         }
+
+        [TestMethod]
+        public void Translate_StringContainingSReplacesSWithZ_String()
+        {
+            LeetspeakTranslator translator = new LeetspeakTranslator();
+            string s = "s";
+            Assert.AreEqual("z", translator.Translate(s));
+        }
     }
 }
