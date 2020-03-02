@@ -39,5 +39,13 @@ namespace Leetspeak.Tests
             string s = "I";
             Assert.AreEqual("1", translator.Translate(s));
         }
+
+        [TestMethod]
+        public void Translate_StringContainingTReplacesTWithSeven_String()
+        {
+            LeetspeakTranslator translator = new LeetspeakTranslator();
+            string s = "T";
+            Assert.AreEqual("7", translator.Translate(s));
+        }
     }
 }
