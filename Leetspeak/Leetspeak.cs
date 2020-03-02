@@ -10,8 +10,16 @@ namespace Leetspeak
         }
         public string Translate(string sentence)
         {
-            return sentence;
+            char[] characters = sentence.ToLower().ToCharArray();
+            for (int i = 0; i < characters.Length; i++)
+            {
+                if (characters[i] == 'e')
+                {
+                    characters[i] = '3';
+                }
+            }
+            string transformed = new string(characters);
+            return transformed;
         }
-
     }
 }

@@ -20,6 +20,11 @@ This application allows you translate a sentence to L33tSp3ak.
   - Input: E
   - Output: 3
 
+- _Spec: The application replace the character O with the number 0._
+
+  - Input: O
+  - Output: 0
+
 ## Setup/Installation Requirements
 
 - Clone this repository.
