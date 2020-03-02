@@ -31,5 +31,13 @@ namespace Leetspeak.Tests
             string s = "O";
             Assert.AreEqual("0", translator.Translate(s));
         }
+
+        [TestMethod]
+        public void Translate_StringContainingCapitalIReplacesIWithOne_String()
+        {
+            LeetspeakTranslator translator = new LeetspeakTranslator();
+            string s = "I";
+            Assert.AreEqual("1", translator.Translate(s));
+        }
     }
 }

@@ -15,15 +15,20 @@ This application allows you translate a sentence to L33tSp3ak.
   - Input: A
   - Output: A
 
-- _Spec: The application replace the character E with the number 3._
+- _Spec: The application replaces the character E with the number 3._
 
   - Input: E
   - Output: 3
 
-- _Spec: The application replace the character O with the number 0._
+- _Spec: The application replaces the character O with the number 0._
 
   - Input: O
   - Output: 0
+
+  - _Spec: The application replaces the capital character I with the number 1._
+
+  - Input: I
+  - Output: 1
 
 ## Setup/Installation Requirements
 
