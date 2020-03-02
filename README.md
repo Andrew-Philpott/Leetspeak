@@ -15,6 +15,11 @@ This application allows you translate a sentence to L33tSp3ak.
   - Input: A
   - Output: A
 
+- _Spec: The application replace the character E with the number 3._
+
+  - Input: E
+  - Output: 3
+
 ## Setup/Installation Requirements
 
 - Clone this repository.

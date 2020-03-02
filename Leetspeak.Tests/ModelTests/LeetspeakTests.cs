@@ -15,5 +15,13 @@ namespace Leetspeak.Tests
             string s = "A";
             Assert.AreEqual("A", translator.Translate(s));
         }
+
+        [TestMethod]
+        public void Translate_StringContainingEReplacesEWithThree_String()
+        {
+            LeetspeakTranslator translator = new LeetspeakTranslator();
+            string s = "A";
+            Assert.AreEqual("A", translator.Translate(s));
+        }
     }
 }
