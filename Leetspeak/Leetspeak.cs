@@ -30,6 +30,10 @@ namespace Leetspeak
                         {
                             characters[i] = '0';
                         }
+                        else if (l == 't')
+                        {
+                            characters[i] = '7';
+                        }
                     }
                 }
                 else
@@ -41,6 +45,10 @@ namespace Leetspeak
                     else if (characters[i] == 'o')
                     {
                         characters[i] = '0';
+                    }
+                    else if (characters[i] == 't')
+                    {
+                        characters[i] = '7';
                     }
                 }
             }
