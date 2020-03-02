@@ -17,6 +17,11 @@ namespace Leetspeak
                 {
                     characters[i] = '3';
                 }
+
+                else if (characters[i] == 'o')
+                {
+                    characters[i] = '0';
+                }
             }
             string transformed = new string(characters);
             return transformed;
