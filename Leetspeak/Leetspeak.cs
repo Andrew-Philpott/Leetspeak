@@ -10,17 +10,38 @@ namespace Leetspeak
         }
         public string Translate(string sentence)
         {
-            char[] characters = sentence.ToLower().ToCharArray();
+            char[] characters = sentence.ToCharArray();
             for (int i = 0; i < characters.Length; i++)
             {
-                if (characters[i] == 'e')
+                if (Char.IsUpper(characters[i]))
                 {
-                    characters[i] = '3';
+                    if (characters[i] == 'I')
+                    {
+                        characters[i] = '1';
+                    }
+                    else
+                    {
+                        char l = Char.ToLower(characters[i]);
+                        if (l == 'e')
+                        {
+                            characters[i] = '3';
+                        }
+                        else if (l == 'o')
+                        {
+                            characters[i] = '0';
+                        }
+                    }
                 }
-
-                else if (characters[i] == 'o')
+                else
                 {
-                    characters[i] = '0';
+                    if (characters[i] == 'e')
+                    {
+                        characters[i] = '3';
+                    }
+                    else if (characters[i] == 'o')
+                    {
+                        characters[i] = '0';
+                    }
                 }
             }
             string transformed = new string(characters);
